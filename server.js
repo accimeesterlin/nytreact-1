@@ -2,7 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const routes = require("./routes");
+// const routes = require("./routes");
 
 // Express
 const app = express();
@@ -20,12 +20,12 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Add routes to API and views
-app.use(routes);
+// app.use(routes);
 
 // Connect to Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nytreact");
 
 // Start the API server
 app.listen(PORT, function() {
-    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+    console.log(`API Server now listening on PORT ${PORT}!`);
 });
