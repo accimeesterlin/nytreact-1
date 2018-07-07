@@ -11,7 +11,7 @@ class Articles extends Component {
 
     componentDidMount() {
         this.loadArticles();
-    }
+    };
 
     loadArticles = () => {
         API.getArticles()
@@ -27,6 +27,6 @@ class Articles extends Component {
             { this.state.articles.length ? (<h3>Articles to Display</h3>) : (<h3>No Articles to Display</h3>) }
             </div>
         )
-}}
+}};
 
 export default Articles;
