@@ -10,13 +10,15 @@ class Articles extends Component {
     };
 
     componentDidMount() {
+        console.log("mounted")
         this.loadArticles();
     };
 
     loadArticles = () => {
         API.getArticles()
             .then(res => 
-                this.setState( { articles: res.data, title: "", date: "", url: "" })
+                this.setState( { articles: res.data, title: "", date: "", url: "" }),
+                console.log(this.state)
             )
             .catch(err => console.log(err));
     };
