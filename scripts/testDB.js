@@ -33,3 +33,8 @@ db.Article
         console.error(err);
         process.exit(1);
     });
+
+    // NYT 
+    // https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=b6fcafce1265400bbc316a7b6e278daf
+
+    // https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=b6fcafce1265400bbc316a7b6e278daf&q=marijuana
