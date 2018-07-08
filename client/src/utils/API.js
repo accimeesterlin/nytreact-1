@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
     // Get all articles
     getArticles: () => {
-        return axios.get("/api/articles");
+        return axios.get("https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=b6fcafce1265400bbc316a7b6e278daf");
     },
     // Get single article with given id
     getArticle: () => {
