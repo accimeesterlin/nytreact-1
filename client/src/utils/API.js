@@ -6,11 +6,11 @@ export default {
         return axios.get("/api/articles");
     },
     // Get single article with given id
-    getArticle: (id) => {
+    getArticle: id => {
         return axios.get("/api/articles/" + id);
     },
     // Delete article with given id
-    deleteArticle: (id) => {
+    deleteArticle: id => {
         return axios.delete("/api/articles/" + id);
     },
     // Save article to favorites
@@ -21,4 +21,4 @@ export default {
     removeFavArticle: (id) => {
         return axios.delete("/api/articles/favorites" + id);
     }
-}
+};
